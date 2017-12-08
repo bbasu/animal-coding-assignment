@@ -9,6 +9,20 @@ import java.util.Map;
 
 import com.mensemedia.service.Strategy;
 
+/**
+ * 
+ * @author bbasu
+ * 
+ * UNIQUE COUNT STRATEGY
+ * 
+ * E.g. 
+ * six : 2
+ * one : 2
+ * seven : 1
+ * three : 2
+ * two : 1
+ *
+ */
 public class UniqueCountStratergy implements Strategy{
     
     private List<String> items;

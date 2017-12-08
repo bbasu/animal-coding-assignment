@@ -1,5 +1,10 @@
 package com.mensemedia.utils;
 
+/** 
+ * @author bbasu
+ *
+ * Constants file
+ */
 public interface Constants {
 
     String MD_5 = "MD5";

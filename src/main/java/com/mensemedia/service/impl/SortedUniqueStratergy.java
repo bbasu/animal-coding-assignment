@@ -7,6 +7,19 @@ import java.util.TreeSet;
 
 import com.mensemedia.service.Strategy;
 
+/**
+ * 
+ * @author bbasu
+ * 
+ * UNIQUE SORTED STRATEGY
+ * 
+ * E.g. 
+ * cow
+ * horse
+ * moose
+ * sheep
+ *
+ */
 public class SortedUniqueStratergy implements Strategy{
     
     private List<String> items;

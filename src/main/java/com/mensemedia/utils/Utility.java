@@ -29,6 +29,14 @@ public class Utility {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Executor.class);   
 
+    /**
+     * 
+     * @param inputFileString
+     * @return valueMap
+     * 
+     * This method parses the input.txt file to come up with a value Map,
+     * where the categories (identified by upper case) are keys and they have a list of items as values
+     */
     public static Map<String, List<String>> getValueMap(String inputFileString) {
 
         Scanner fileScanner = null;
@@ -41,6 +49,10 @@ public class Utility {
             while (fileScanner.hasNext()) {
                 String value = fileScanner.nextLine();
 
+                /*
+                 * If-else is used to read the CARS category. As CARS has upper cased values as items,
+                 * it was necessary to do this check to populate the CARS items/
+                 */
                 if(StringUtils.isAllUpperCase(value) && !value.equalsIgnoreCase(Constants.CARS)) {
                     currentCategory = value;
                 } else if(StringUtils.isAllUpperCase(value) && value.equalsIgnoreCase(Constants.CARS)) {
@@ -75,10 +87,13 @@ public class Utility {
         return map;
     }
 
-    public static boolean checkIfCategoryExists(String inputFileString, String inputCategory) {
-        return inputFileString.toLowerCase().indexOf(inputCategory.toLowerCase()) != -1 ? true : false;
-    }
-
+    /**
+     * 
+     * @param value
+     * @return byte[] hash
+     * 
+     * This method converts a string to its corresponding MD5 hash
+     */
     public static byte[] stringToMD5(String value) {
         byte[] hash = null;
         try {
@@ -94,6 +109,14 @@ public class Utility {
         return hash;
     }
 
+    /**
+     * 
+     * @param items
+     * @return strategyMap
+     * 
+     * This method populates all the strategies in a map. The keys are the expected input from the user,
+     * values are object of the corresponding Impl class defining those strategies
+     */
     public static Map<String, Strategy> getStrategies(List<String> items) {
 
         Map<String, Strategy> stratergyMap = new HashMap<>();

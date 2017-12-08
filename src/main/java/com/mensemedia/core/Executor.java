@@ -66,6 +66,11 @@ public class Executor implements Runnable {
         }
     }
     
+    /**
+     * @param value
+     * 
+     * This method checks if the input is 0. The control flows to the catch block and program is exited.
+     */
     private void isInputZero(String value) {
         try {
             int k=1;
@@ -76,7 +81,13 @@ public class Executor implements Runnable {
         }
         
     }
-
+        
+    /** 
+     * @param inputCategory
+     * 
+     * This method checks if an input category exists. The control flows to the catch block and an 
+     * appropriate message is shown and program is exited.
+     */
     private void checkCategory(String inputCategory) {
         try {
             valueMap.get(inputCategory).size();
