@@ -54,15 +54,9 @@ It can be solved in different ways each depending which level of coding craftsma
 
 JDK 1.7 or above
 
-```
-Give examples
-```
-
 ### Installing
 
-Import to IDE (Eclipse /IntelliJ)
-
-Import as a Maven Project
+Import as a Maven Project in  IDE (Eclipse /IntelliJ) 
 
 ## Execution
 
@@ -71,7 +65,7 @@ Import as a Maven Project
 
 ## Running the tests
 
-<TO DO>
+TO DO
 
 ## Deployment
 
