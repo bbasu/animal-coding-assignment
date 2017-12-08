@@ -32,16 +32,16 @@ It can be solved in different ways each depending which level of coding craftsma
 	2. Now, as a Change Request, you are to add functionality to your program that allows for processing a new category called "CARS"
 	3. Read & process file „input2.txt“ which contains category „CARS“, as well as NUMBERS and ANIMALS.
 		a. Data items are case insensitive, i.e. OPEL and Opel represent 1 unique data item
-	4. Output the data for categories "ANIMALS" and "NUMBERS" as described in Level 1.
-		a. Additionally, output the unique data items of category “CARS” as a backwards sorted list, each item written in lower case.
-		b. Each data item output shall be followed by the item’s MD5 hash written in brackets.
-			Hint: using org.apache.commons.codec.digest.DigestUtils from commons-codec for creating the hash is perfectly legal.
-		c. I.e. the expected output for CARS shall be:
-			CARS: 
-			vw (7336a2c49b0045fa1340bf899f785e70)
-			opel (f65b7d39472c52142ea2f4ea5e115d59)
-			bmw (71913f59e458e026d6609cdb5a7cc53d)
-			audi (4d9fa555e7c23996e99f1fb0e286aea8)
+	4. Output the data for categories "ANIMALS" and "NUMBERS" as described in Level 1.<br />
+		a. Additionally, output the unique data items of category “CARS” as a backwards sorted list, each item written in lower case.<br />
+		b. Each data item output shall be followed by the item’s MD5 hash written in brackets.<br />
+			Hint: using org.apache.commons.codec.digest.DigestUtils from commons-codec for creating the hash is perfectly legal.<br />
+		c. I.e. the expected output for CARS shall be:<br />
+			CARS: <br />
+			vw (7336a2c49b0045fa1340bf899f785e70)<br />
+			opel (f65b7d39472c52142ea2f4ea5e115d59)<br />
+			bmw (71913f59e458e026d6609cdb5a7cc53d)<br />
+			audi (4d9fa555e7c23996e99f1fb0e286aea8)<br />
 	5. Make sure the input file is read and processed only once (as if the file was large and expensive to process).
  
 * Level 4:
