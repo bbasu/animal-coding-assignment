@@ -8,16 +8,16 @@ It can be solved in different ways each depending which level of coding craftsma
  
 	1. As a general requirement: Please make sure we can execute the code on our local machines, i.e. please provide all required dependencies and installation documentation or a ready to use build configuration, e.g. a maven pom.xml, composer.json etc. if needed.
 	2. Please write a program that reads file input.txt which you find attached to this mail.
-	3. In this file you’ll find lines containing categories and data. The categories are “ANIMALS” and “NUMBERS”.
-		a. Please note that categories are fix values, i.e. they are NOT determined by being written upper case.
-		b. Each line following a category represents data items that belong to the previously read category (unless the new line represents a category itself)
-	4. After reading and processing the file please output to the system console:
-		a. A sorted list of all unique data items of category “ANIMALS”, i.e.
-			ANIMALS:
-			cow
-			horse
-			moose
-			sheep
+	3. In this file you’ll find lines containing categories and data. The categories are “ANIMALS” and “NUMBERS”. <br />
+		a. Please note that categories are fix values, i.e. they are NOT determined by being written upper case.<br />
+		b. Each line following a category represents data items that belong to the previously read category (unless the new line represents a category itself)<br />
+	4. After reading and processing the file please output to the system console:<br />
+		a. A sorted list of all unique data items of category “ANIMALS”, i.e.<br />
+			ANIMALS:<br />
+			cow<br />
+			horse<br />
+			moose<br />
+			sheep<br />
 		b. A list of all unique data items of category “NUMBERS”, followed by “: “ and the number of occurrences of the respective data item
  
 	!! While there is a straightforward solution for Level 1 you can also try to reach higher levels if you like:
